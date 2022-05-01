@@ -1,0 +1,34 @@
+command to run tsc files
+  tsc <name.ts> - to compile the tsc file into js file
+  node name.js
+Transscript file are converted to js file as js file to get executed by browser.
+Transscript is strongly typed
+Data types:-
+boolean  - true/false
+number   - integer and floating values
+string - strings
+any - for any datatype
+
+how to declare ts variables:
+
+let <variablename>: type = <initialvalue>
+examples:
+let found : boolean = true;
+let grade:number = 88.4;
+
+let keyword is used to decalre variables
+
+tsc generates .js file is ts file has error so to prevent this
+: use command
+tsc -noEmitOnError <name.ts>
+
+tsc --build --clean to clear js file
+
+ * To make use of class in other file
+make class exportable by adding export keyword
+export class name{..}
+
+and import it inn other file
+import {name } from 'relative path to the file'
+
+* extends keyword used for inheritance
